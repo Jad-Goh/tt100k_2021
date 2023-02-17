@@ -34,9 +34,9 @@ def bdd2yolo5(categorys,jsonFile,writepath):
 
 if __name__ == "__main__":
     ####################args#####################
-    categorys = ["person", "rider", "car", "bus", "truck", "bike", "motor"]    # 自己需要从BDD数据集里提取的目标类别
+    categorys = ["person", "rider", "car", "bus", "truck", "bike", "motor", "traffic light", "traffic sign","train"]    # 自己需要从BDD数据集里提取的目标类别 "person", "rider", "car", "bus", "truck", "bike", "motor", "traffic light", "traffic sign","train"
     readpath = "/home/gao/Net/Datasets/bdd100k/det_annotations/val/"   # BDD数据集标签读取路径，这里需要分两次手动去修改train、val的地址
-    writepath = "/home/gao/Net/Datasets/bdd100k/labels/val/"	# BDD数据集转换后的标签保存路径
+    writepath = "/home/gao/Net/Datasets/bdd100k/labels/val1/"	# BDD数据集转换后的标签保存路径
 
     fileList = os.listdir(readpath)
     #print(fileList)
